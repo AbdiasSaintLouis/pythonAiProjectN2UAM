@@ -32,3 +32,4 @@ class MainWindow(QWidget):
 
     def load_data(self):
         pass
+    
