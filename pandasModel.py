@@ -25,3 +25,4 @@ class pandasModel(QAbstractTableModel):
             elif orientation == Qt.Vertical:
                 return str(self._data.index[section])
         return None
+    
