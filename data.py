@@ -29,3 +29,4 @@ def load_data(file_name=None, file_type=None, host=None, user=None, password=Non
         raise ValueError("Você deve especificar um arquivo ou uma conexão com o banco de dados")
 
     return data
+
