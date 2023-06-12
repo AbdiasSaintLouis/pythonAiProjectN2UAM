@@ -1,6 +1,6 @@
 import sys
 import openpyxl
-from PyQt5.QtWidgets import QApplication, QFileDialog, QTableView
+from PyQt5.QtWidgets import QApplication, QFileDialog, QTableView, QPushButton
 from ui import MainWindow
 from data import load_data
 from pandasModel import pandasModel
@@ -12,6 +12,12 @@ if __name__ == '__main__':
 
     # criar a janela da interface gráfica do usuário
     window = MainWindow()
+
+    # adicionar um botão "Fechar" à janela
+    close_button = QPushButton("Fechar")
+    close_button.clicked.connect(window.close)
+    window.layout.addWidget(close_button)
+
     window.show()
 
     # carregar dados de um arquivo
